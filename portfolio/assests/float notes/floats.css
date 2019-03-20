@@ -1,0 +1,83 @@
+/**
+ * Float Layout Activity
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  background: #FFA500;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#left, #middle, #right {
+  width: 33.333333%;
+  float: left;
+}
+
+#left {
+  background: #30948D;
+}
+
+#middle {
+  background: #9e1212;
+}
+
+#right {
+  background: #30948D;
+}
+
+#full {
+  background: #394549;
+  margin-bottom: 20px;
+  /* clear: both; */
+  /* scroll-behavior: auto
+      i wanna play with scroll */
+  /* clear: both; */
+  overflow: auto;
+  /* brings the element back over the kid (aside) */
+
+    }
+
+#division {
+  margin-top: 30px;
+  background: #6ea3da;
+  padding: 20px;
+  color: wheat
+}
+
+aside {
+  background: #a6b747;
+  width: 33.3333%;
+  height: 210px;
+  float: left;
+  /* causes it to divorce and flow over */
+  color: wheat;
+  margin-left: 40px;
+}
+
+footer {
+  background: #FFA500;
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

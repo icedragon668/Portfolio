@@ -1,0 +1,271 @@
+
+* {
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/white-waves.png")
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+main {
+    background-color: white;
+    padding-bottom: 20px;
+    border: 1px solid #ddd;
+
+
+    /* width: 80%;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    clear: both; */
+    
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4aaaa5;
+}
+
+header {
+    height: 72px;
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+}
+
+
+
+.navLnk {
+    float: right;
+    font-size: 18px;
+    height: 100%;
+    margin: 10px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+li {
+    /* float: left; */
+    margin: 10px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+/* i feel like theres a better way to call these elements... */
+/* wtf is going on here? */
+nav > ul > li:nth-child(3), li:nth-child(1), li:nth-child(2) {
+    border-right: 2px solid #ccc;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+}
+/* clear the look of the list links */
+
+.Name {
+    padding: 0 20px;
+    float: left;
+    background-color: #4aaaa5;
+    /* margin: 0 0 0 100%; */
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    line-height: 70px;
+}
+
+.contentBox {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;    
+}
+
+header > .contentBox {
+    margin-top: 0px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*Foot Block Start */
+
+.foot {
+    position: fixed;
+    border-top: 2px solid #4aaaa5;
+    background: darkgrey;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* Foot Block End */
+
+/* Image Block Start */
+
+.container {
+    /* .container clips */
+    /* .image squishes */
+    float: left;
+    position: relative;
+    height: 150px;
+    width: 180px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.imgtxt {
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    font-size: 22px;
+    background-color: #4aaaa5;
+    width: 100%;
+    text-align: center;
+}
+
+.imgdsc {
+    opacity: 0;
+    font-size: 18px;
+    padding: 10px 10px;
+    position: absolute;
+    color: #eee;
+    height: 150px;
+    width: 100%;
+    top: -120px;
+    line-height: 20px;
+    text-align: center;
+    overflow: scroll;
+    /* transition work */
+    transition: 1s;
+    transition-delay: .05s;
+    /* odd, i to look closer at this. #000 didn't work... */
+    background-color: black; 
+}
+
+.container:hover .imgdsc {
+    opacity: 1;
+}
+
+/* Image Bloack End */
+
+/* Form Block Start */
+
+.submit {
+
+}
+
+input {
+    width: 45%;
+}
+
+form {
+    margin: 0 1%;
+    padding-bottom: 5px;
+}
+
+#msg {
+    width: 95%;
+    height: 100px;
+}
+
+button {
+    margin: 5px;
+}
+
+p {
+    margin: 10px;
+}
+
+p > img {
+    float: left;
+    margin-right: 8px;
+}
+
+/* Form Block End */
+/* position: relative (targets normal spot)
+position: absolute (targets nearest non-static) (these scroll)
+position: static (fine grain: none, default)
+position: fixed (relative to viewport) (they don't scroll) */
+
+/*
+@media screen and (min-width: 768px) { //here and above, mobile first, default at top (mobile)
+
+    .body {
+        background-color: #333
+    }
+}
+*/
+
+@media screen and (max-width: 980px) {
+    .contentBox h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* portfolio 2 across */
+    .contentBox h1 {
+        font-size: 16px;
+    }
+
+    .contentBox li {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 640px) {
+    /* stack header */
+    /* portfolio 1 across */
+
+    .contentBox {
+        width: 100%;
+    }
+
+    header {
+    
+    }
+
+    .Name {
+        padding: 0 20px;
+        float: left;
+        /* margin: 0 0 0 100%; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .navLnk {
+        /* position: absolute; */
+        /* top: 58px; */
+        /* left: -10px; */
+        height: 60px;
+        overflow: hidden;
+        /* padding-left: 20%; */
+        text-align: center;
+        margin: 0px;
+        padding-top: 10px;
+    }
+
+    ul {
+        background: #eee;
+        width: 100%;
+    }
+
+}
+
+/* works 'til 240... */
+/*if i had more time, i'd clean up this css, and make the portfolio images responsive. specifically, resize them to better fill the screen. */
