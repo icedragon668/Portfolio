@@ -31,13 +31,16 @@ class Navbar extends React.Component {
     state = {}
     render() {
         return (
-        <div className="contentBox"> {/*navbar-expand-lg sticky-top */}
-            <nav idName="navBar">
+        <div className=""> {/*navbar-expand-lg sticky-top */}
+        <p style={{"text-align":"center"}}> |||</p>
+            <nav idName="navBar" style={{"text-align":"center"}}>
                 <ul className="navLnk"> {/*  justify-content-center */}
-                <li style={{float: "left"}}><Menu /></li>
+                {/* <li style={{float: "left"}}><Menu /></li> */}
+                <li style={{"float":"left"}}><Menu/></li>
                 {/* {this.props.location}stateful page name */}
-                <li><span>myProfile</span></li>
-                <li style={{float: "right"}}><Thingy /></li>
+                <li><h4 class="Name">Mitchell "Kori" Simmons</h4></li>
+                {/* <li style={{float: "right"}}><Thingy /></li> */}
+                <li style={{"float":"right"}}><Thingy /></li>
                 </ul>
             </nav>
             <LowerBorder />

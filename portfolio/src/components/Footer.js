@@ -29,12 +29,12 @@ class Footer extends React.Component {
     state = {}
     render() {
     return (
-        <div className="container">
+        <div>
             <UpperBorder />
-            <nav>
-                <Links />
-                <Copyright />
-                <Contact />
+            <nav style={{"text-align":"center"}}>
+                <li style={{"float":"left"}}><Links /></li>
+                <li><Copyright /></li>
+                <li style={{"float":"right"}}><Contact /></li>
             </nav>
         </div>
     )}

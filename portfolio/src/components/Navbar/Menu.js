@@ -5,7 +5,11 @@ class Menu extends React.Component {
     render() {
         return (
         <div className="container">
-            <p>menu go here</p>
+                
+                    <option><a href="index.html">Profile</a></option>
+                    <option><a href="portfolio.html">Portfolio</a></option>
+                    <option><a href="contact.html">Contact</a></option>
+                
         </div>
         )}
 }

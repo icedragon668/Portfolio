@@ -25,6 +25,13 @@ class Body extends React.Component {
         return (
         <div className="container">
             <p>body go here</p>
+            <p>lorwm</p>
+            <p>lorwm</p>
+            <p>lorwm</p>
+            <p>lorwm</p>
+            <p>lorwm</p>
+            <p>lorwm</p>
+            
         </div>
         )}
 }
