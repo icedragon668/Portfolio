@@ -1,0 +1,62 @@
+Name
+add
+ph em
+
+elevator pitch
+<em>Full MERN Stack Developer</em> with current knowledge, and a desire to continue to be on the forefront.
+
+accomplishments
+built multiple projects
+maintained 
+CE j->manager
+
+skills
+get assist from CS
+
+edu
+linkedin
+
+focus
+brand statement
+full stack development in conjunction with a creative environment.
+industry preferred: open to all but leaning towards experience in game development
+position preferrences: either game based or remote
+
+Profile
+ <about>lorem</about>
+ <pic>?</pic>
+ <info & social>
+
+Resume
+ <skills>
+
+Portfolio
+ <projects>
+
+Refrences
+ <none atm></write some!>
+
+Contact
+ <expanded from profile>
+ 
+     
+craft a self-sllyabus
+add.lang (game && || remote focus)
+
+html
+css
+javascript
+jquery
+bootstrap
+
+api
+json
+ajax
+axios
+
+
+// older statement
+"A jack of all trades and master of none, but better than a master of one."
+Robert Greene used it to disparage William Shakespeare. I take it as a compliment to be included in such company.
+ My own experience is widely varied, in no small part because I simply enjoy learning and experiencing.
+And I plan to keep at it.
