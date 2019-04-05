@@ -69,3 +69,38 @@ li {
   position: sticky;
   bottom: 0px
 }
+
+@font-face {
+  font-family: 'rune';
+  src: url('./assets/RunesEUR.ttf'); /* IE9 Compat Modes */
+  src: url('./assets/RunesEUR.ttf') format('truetype'), /* IE6-IE8 */
+}
+
+body {
+ font-family: "rune";
+ font-size: 120%;
+ font-weight: 800;
+ animation: translate 1s ease-out 2.5s forwards
+}
+
+@keyframes translate {
+   /* 0%{   } */
+   /* 10%{ text-shadow: -6px 0px 1px #61dafb, 0px -6px 1px red, 6px 0px 1px green, 0px 6px 1px purple;} */
+   /* 20%{ text-shadow: 0px 6px 2px #61dafb, -6px 0px 2px red, 0px -6px 2px green, 6px 0px 2px purple;} */
+   /* 30%{ text-shadow: 6px 0px 3px #61dafb, 0px 6px 3px red, -6px 0px 3px green, 0px -6px 3px purple;} */
+   /* 40%{ text-shadow: 0px -6px 4px #61dafb, 6px 0px 4px red, 0px 6px 4px green, -6px 0px 4px purple;} */
+   /* 50%{ text-shadow: -1.5px -4.5px 5px #61dafb, 1.5px 1.5px 5px red, 1.5px 4.5px 5px green, -1.5px -1.5px 5px purple;} */
+   /* 60%{ text-shadow: -3px -3px 4px #61dafb, -3px 3px 4px red, 3px 3px 2px green, 3px -3px 2px purple;} */
+   /* 70%{ text-shadow: 3px -3px 3px #61dafb, -3px -3px 3px red, -3px 3px 2px green, 3px 3px 2px purple;} */
+   /* 80%{ text-shadow: 3px 3px 2px #61dafb, 3px -3px 2px red, -3px -3px 4px green, -3px 3px 2px purple;} */
+   /* 90%{ text-shadow: -3px 3px 1px #61dafb, 3px 3px 1px red, 3px -3px 2px green, -3px -3px 4px purple;} */
+   20%{ text-shadow: -2px 2px 1px #61dafb, 2px -2px 1px red, 2px 2px 1px green, -2px -2px 1px purple;}
+   40%{ text-shadow: -2px -2px 1px #61dafb, 2px 2px 1px red, 2px -2px 1px green, -2px 2px 1px purple;}
+   60%{ text-shadow: 2px -2px 1px #61dafb, -2px 2px 1px red, -2px -2px 1px green, 2px 2px 1px purple;}
+   80%{ transform:rotateY(180deg); font-family: "rune"; text-shadow: 2px 2px 1px #61dafb, -2px -2px 1px red, -2px 2px 1px green, 2px -2px 1px purple;}
+   100%{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 100;
+    };
+}
+
