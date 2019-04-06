@@ -62,12 +62,16 @@ li {
 
 .header {
   position: sticky;
-  top: 0px
+  top: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
   position: sticky;
-  bottom: 0px
+  bottom: 0px;
+  display: flex;
+  justify-content: center; 
 }
 
 @font-face {
@@ -78,28 +82,91 @@ li {
 
 body {
  font-family: "rune";
- font-size: 120%;
+ font-size: 130%;
  font-weight: 800;
- animation: translate 1s ease-out 2.5s forwards
+ animation: translate 2s ease-out 2.5s forwards
 }
 
 @keyframes translate {
    /* 0%{   } */
-   /* 10%{ text-shadow: -6px 0px 1px #61dafb, 0px -6px 1px red, 6px 0px 1px green, 0px 6px 1px purple;} */
-   /* 20%{ text-shadow: 0px 6px 2px #61dafb, -6px 0px 2px red, 0px -6px 2px green, 6px 0px 2px purple;} */
-   /* 30%{ text-shadow: 6px 0px 3px #61dafb, 0px 6px 3px red, -6px 0px 3px green, 0px -6px 3px purple;} */
-   /* 40%{ text-shadow: 0px -6px 4px #61dafb, 6px 0px 4px red, 0px 6px 4px green, -6px 0px 4px purple;} */
-   /* 50%{ text-shadow: -1.5px -4.5px 5px #61dafb, 1.5px 1.5px 5px red, 1.5px 4.5px 5px green, -1.5px -1.5px 5px purple;} */
-   /* 60%{ text-shadow: -3px -3px 4px #61dafb, -3px 3px 4px red, 3px 3px 2px green, 3px -3px 2px purple;} */
-   /* 70%{ text-shadow: 3px -3px 3px #61dafb, -3px -3px 3px red, -3px 3px 2px green, 3px 3px 2px purple;} */
-   /* 80%{ text-shadow: 3px 3px 2px #61dafb, 3px -3px 2px red, -3px -3px 4px green, -3px 3px 2px purple;} */
-   /* 90%{ text-shadow: -3px 3px 1px #61dafb, 3px 3px 1px red, 3px -3px 2px green, -3px -3px 4px purple;} */
-   20%{ text-shadow: -2px 2px 1px #61dafb, 2px -2px 1px red, 2px 2px 1px green, -2px -2px 1px purple;}
-   40%{ text-shadow: -2px -2px 1px #61dafb, 2px 2px 1px red, 2px -2px 1px green, -2px 2px 1px purple;}
-   60%{ text-shadow: 2px -2px 1px #61dafb, -2px 2px 1px red, -2px -2px 1px green, 2px 2px 1px purple;}
-   80%{ transform:rotateY(180deg); font-family: "rune"; text-shadow: 2px 2px 1px #61dafb, -2px -2px 1px red, -2px 2px 1px green, 2px -2px 1px purple;}
+   10%{ text-shadow:
+1.85px 0.77px 1px rgb(120,120,120)
+
+    ;}
+   20%{ text-shadow:
+2.00px 0.00px 1px rgb(120,120,120),
+3.70px 1.53px 1px rgb(120,120,120),
+4.24px 4.24px 1px rgb(120,120,120)
+    ;}
+   30%{ text-shadow:
+1.85px -0.77px 1px rgb(120,120,120),
+4.00px 0.00px 1px rgb(120,120,120),
+5.54px 2.30px 1px rgb(120,120,120),
+5.66px 5.66px 1px rgb(120,120,120),
+3.83px 9.24px 1px rgb(120,120,120),
+0.00px 12.00px 1px rgb(120,120,120)
+    ;}
+   40%{ text-shadow:
+1.41px -1.41px 1px rgb(120,120,120),
+3.70px -1.53px 1px rgb(120,120,120),
+6.00px 0.00px 1px rgb(120,120,120),
+7.39px 3.06px 1px rgb(120,120,120),
+7.07px 7.07px 1px rgb(120,120,120),
+4.59px 11.09px 1px rgb(120,120,120),
+0.00px 14.00px 1px rgb(120,120,120),
+-6.12px 14.78px 1px rgb(120,120,120),
+-12.73px 12.73px 1px rgb(120,120,120)
+    ;}
+   50%{ text-shadow:
+0.77px -1.85px 1px rgb(120,120,120),
+2.83px -2.83px 1px rgb(120,120,120),
+5.54px -2.30px 1px rgb(120,120,120),
+8.00px 0.00px 1px rgb(120,120,120),
+9.24px 3.83px 1px rgb(120,120,120),
+8.49px 8.49px 1px rgb(120,120,120),
+5.36px 12.93px 1px rgb(120,120,120),
+0.00px 16.00px 1px rgb(120,120,120),
+-6.89px 16.63px 1px rgb(120,120,120)
+    ;}
+   60%{ text-shadow:
+0.00px -2.00px 1px rgb(120,120,120),
+1.53px -3.70px 1px rgb(120,120,120),
+4.24px -4.24px 1px rgb(120,120,120),
+7.39px -3.06px 1px rgb(120,120,120),
+10.00px 0.00px 1px rgb(120,120,120),
+11.09px 4.59px 1px rgb(120,120,120),
+9.90px 9.90px 1px rgb(120,120,120)
+    ;}
+   70%{ font-family: "rune"; 
+      text-shadow:
+-0.77px -1.85px 1px rgb(120,120,120),
+0.00px -4.00px 1px rgb(120,120,120),
+2.30px -5.54px 1px rgb(120,120,120),
+5.66px -5.66px 1px rgb(120,120,120),
+9.24px -3.83px 1px rgb(120,120,120)
+    ;}
+   /* 79%{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; } */
+   80%{ font-family: "rune"; 
+      text-shadow:
+-0.77px -1.85px 1px rgb(120,120,120),
+0.00px -4.00px 1px rgb(120,120,120),
+2.30px -5.54px 1px rgb(120,120,120),
+5.66px -5.66px 1px rgb(120,120,120)
+    ;}
+   90%{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-shadow:
+-0.77px -1.85px 1px rgb(120,120,120),
+0.00px -4.00px 1px rgb(120,120,120),
+2.30px -5.54px 1px rgb(120,120,120)
+    ;}
+   /* 20%{ text-shadow: -2px 2px 1px #61dafb, 2px -2px 1px red, 2px 2px 1px green, -2px -2px 1px purple;}
+   40%{ text-shadow: -4px 4px 1px #61dafb, 2px 2px 1px red, 2px -2px 1px green, -2px 2px 1px purple;}
+   60%{ text-shadow: -2px 2px 1px #61dafb, -2px 2px 1px red, -2px -2px 1px green, 2px 2px 1px purple;} */
+   /* 80%{ text-shadow: 2px 2px 1px #61dafb, -2px -2px 1px red, -2px 2px 1px green, 2px -2px 1px purple;} */
+   /* 90%{ text-shadow: -1px 1px 1px #61dafb, 1px -1px 1px red, 1px 1px 2px green, -1px -1px 4px purple;} */
    100%{
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 132%;
      font-weight: 100;
     };
 }

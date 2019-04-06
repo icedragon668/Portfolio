@@ -11,6 +11,13 @@ class App extends React.Component {
         location : "landing"
     }
 
+    componentDidMount () {
+        let ele = document.getElementsByTagName('body')
+        console.log(ele)
+        
+    }
+
+
     render() {
         return (
             <>
