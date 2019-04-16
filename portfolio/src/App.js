@@ -16,7 +16,7 @@ class App extends React.Component {
         let e = ''
         if (ele !== undefined) {
         for(let i=0;i<ele.length;i++) {
-          e += `<span className="spin">${ele[i]}</span>`
+          e += `<span class="spin">${ele[i]}</span>`
         };
         return e
         } else {

@@ -30,11 +30,15 @@ class Body extends React.Component {
         console.log( this.props.onLoad(this.state.title))
         // this.setState({title : this.props.onLoad(this.state.title)}, {speil : this.props.onLoad(this.state.speil)})
     }
-
+    componentDidMount = () =>{
+        const newTitle = this.props.onLoad(this.state.title)
+        document.getElementById('title').innerHTML = newTitle
+    }
     render() {
+        // this.translate()
         return (
         <div className="container">
-            <p>{this.state.title}</p>
+            <p id="title"></p>
             <p>{this.state.speil}</p>
         </div>
         )}
