@@ -31,7 +31,7 @@ class Footer extends React.Component {
     return (
         <div>
             <UpperBorder />
-            <nav style={{"text-align":"center"}}>
+            <nav style={{"textAlign":"center"}}>
                 <li style={{"float":"left"}}><Links /></li>
                 <li><Copyright /></li>
                 <li style={{"float":"right"}}><Contact /></li>

@@ -5,10 +5,10 @@ class Menu extends React.Component {
     render() {
         return (
         <div className="container">
-                
-                    <option><a href="index.html">Profile</a></option>
-                    <option><a href="portfolio.html">Portfolio</a></option>
-                    <option><a href="contact.html">Contact</a></option>
+                {/* convert to react router */}
+                <a href="index.html"><option>Profile</option></a>
+                    <a href="portfolio.html"><option>Portfolio</option></a>
+                    <a href="contact.html"><option>Contact</option></a>
                 
         </div>
         )}

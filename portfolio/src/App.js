@@ -11,10 +11,17 @@ class App extends React.Component {
         location : "landing"
     }
 
-    componentDidMount () {
-        let ele = document.getElementsByTagName('body')
-        console.log(ele)
-        
+    translate = (var1) => {
+        let ele = var1
+        let e = ''
+        if (ele !== undefined) {
+        for(let i=0;i<ele.length;i++) {
+          e += `<span className="spin">${ele[i]}</span>`
+        };
+        return e
+        } else {
+            console.log("empty?")
+        }
     }
 
 
@@ -25,7 +32,7 @@ class App extends React.Component {
                     <Navbar {...this.state}/>
                 </header>
                 <div className="body">
-                    <Body {...this.state}/>
+                    <Body {...this.state} onLoad={this.translate}/>
                 </div>
                 <div className="footer">
                     <Footer {...this.state}/>

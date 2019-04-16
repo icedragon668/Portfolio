@@ -1,28 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 body {
   background-color:rgb(29, 29, 34);
   color: rgb(100,100,100)
@@ -84,7 +59,12 @@ body {
  font-family: "rune";
  font-size: 130%;
  font-weight: 800;
- animation: translate 2s ease-out 2.5s forwards
+ animation: translate 2s ease-out 2.5s forwards;
+ transition: all .07s ease;
+}
+
+.spin {
+  transform: rotateY(360deg)
 }
 
 @keyframes translate {
@@ -159,11 +139,6 @@ body {
 0.00px -4.00px 1px rgb(120,120,120),
 2.30px -5.54px 1px rgb(120,120,120)
     ;}
-   /* 20%{ text-shadow: -2px 2px 1px #61dafb, 2px -2px 1px red, 2px 2px 1px green, -2px -2px 1px purple;}
-   40%{ text-shadow: -4px 4px 1px #61dafb, 2px 2px 1px red, 2px -2px 1px green, -2px 2px 1px purple;}
-   60%{ text-shadow: -2px 2px 1px #61dafb, -2px 2px 1px red, -2px -2px 1px green, 2px 2px 1px purple;} */
-   /* 80%{ text-shadow: 2px 2px 1px #61dafb, -2px -2px 1px red, -2px 2px 1px green, 2px -2px 1px purple;} */
-   /* 90%{ text-shadow: -1px 1px 1px #61dafb, 1px -1px 1px red, 1px 1px 2px green, -1px -1px 4px purple;} */
    100%{
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      font-size: 132%;
