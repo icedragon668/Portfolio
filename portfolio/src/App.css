@@ -69,12 +69,17 @@ body {
  font-family: "rune";
  font-size: 130%;
  font-weight: 800;
- /* animation: translate 2s ease-out 2.5s forwards; */
+ animation: translate 2s ease-out 2.5s forwards;
+ /* transition: all 2.07s ease; */
+ /* transform: rotate(30deg) */
 }
 
 .spin {
-  transition: all 2.07s ease;
-  transform: rotateY(330deg)
+  /* transition: all 2.07s ease; */
+  /* transform: scale(2); */
+  /* transform: rotate(90deg); */
+  /* transform: translate(10,10); */
+  color: red
 }
 
 @keyframes translate {
