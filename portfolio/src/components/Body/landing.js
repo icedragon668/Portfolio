@@ -23,7 +23,7 @@ import "../App.css"
 class Body extends React.Component {
     state = {
         title : "Learning Driven Programmer.",
-        speil : "This needs to be refactored into a router or at least be router-ed",
+        speil : "I am a lifelong learner, motivated to learn new technology, languages, and even workplace paradigms. Strengths include JS, Express, Node, React, and SVG with an inclination towards animation. I have a passion for game design and development. With previous experience in team management and as an EMT, I have developed an ability to work in fast-paced environments while effectively managing priorities.",
     }
 
     componentDidMount = () =>{
